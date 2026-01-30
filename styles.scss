@@ -7,12 +7,23 @@ html {
     body {
         font-family: "Work Sans", sans-serif;
         height: 100%;
+        background-color: hsl(292, 16%, 49%);
         display: flex;
         justify-content: center;
         align-items: center;
+
+        h1 {
+            font-size: 2rem;
+        }
+        h2 {
+            font-size: 1rem;
+        }
     }
 }
 .parent-container {
+    background-color: hsl(0, 100%, 100%);
+    margin: 1rem;
+
     header {
         display: flex;
     }
