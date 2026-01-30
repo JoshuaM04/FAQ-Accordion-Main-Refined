@@ -23,6 +23,7 @@ html body h2 {
 .parent-container {
   background-color: hsl(0, 100%, 100%);
   margin: 1rem;
+  padding: 20px;
 }
 .parent-container header {
   display: flex;
@@ -35,6 +36,8 @@ ul {
 }
 ul li .accordion-heading {
   display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
 }
 
 .attribution {
