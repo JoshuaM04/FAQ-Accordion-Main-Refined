@@ -12,10 +12,13 @@ body {
     align-items: center;
 
     h1 {
-        font-size: 2rem;
+        font-size: clamp(1.5rem, calc(1rem + 5vw), 3rem);
     }
     h2 {
-        font-size: 1rem;
+        font-size: clamp(.5rem, calc(.53rem + 2vw), 1.5rem);
+    }
+    p {
+        font-size: clamp(.5rem, calc(.53rem + 2vw), 1.5rem);
     }
 }
 
