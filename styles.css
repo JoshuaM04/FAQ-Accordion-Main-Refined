@@ -6,6 +6,7 @@ html {
   height: 100%;
 }
 html body {
+  font-family: "Work Sans", sans-serif;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -13,6 +14,15 @@ html body {
 }
 
 .parent-container header {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+ul li .accordion-heading {
   display: flex;
 }
 
