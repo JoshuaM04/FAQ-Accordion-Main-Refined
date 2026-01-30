@@ -2,10 +2,8 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-html body {
+body {
+  min-height: 100dvh;
   font-family: "Work Sans", sans-serif;
   height: 100%;
   background-color: hsl(292, 16%, 49%);
@@ -13,10 +11,10 @@ html body {
   justify-content: center;
   align-items: center;
 }
-html body h1 {
+body h1 {
   font-size: 2rem;
 }
-html body h2 {
+body h2 {
   font-size: 1rem;
 }
 
@@ -27,6 +25,8 @@ html body h2 {
 }
 .parent-container header {
   display: flex;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 ul {
@@ -37,7 +37,16 @@ ul {
 ul li .accordion-heading {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 2.5rem;
+}
+ul li .accordion-control {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-image: url("assets/images/icon-plus.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .attribution {

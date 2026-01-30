@@ -1,25 +1,24 @@
 * {
     box-sizing: border-box;
 }
-html {
+
+body {
+    min-height: 100dvh;
+    font-family: "Work Sans", sans-serif;
     height: 100%;
+    background-color: hsl(292, 16%, 49%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    body {
-        font-family: "Work Sans", sans-serif;
-        height: 100%;
-        background-color: hsl(292, 16%, 49%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        h1 {
-            font-size: 2rem;
-        }
-        h2 {
-            font-size: 1rem;
-        }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1rem;
     }
 }
+
 .parent-container {
     background-color: hsl(0, 100%, 100%);
     margin: 1rem;
@@ -27,6 +26,8 @@ html {
 
     header {
         display: flex;
+        align-items: center;
+        gap: 1.5rem;
     }
 }
 ul {
@@ -38,7 +39,16 @@ ul {
         .accordion-heading {
             display: flex;
             justify-content: space-between;
+            align-items: center;
             gap: 2.5rem;
+        }
+        .accordion-control {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-image: url("assets/images/icon-plus.svg");
+            background-position: center center;
+            background-repeat: no-repeat;
         }
     }
 }
